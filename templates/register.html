@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}
+    <title>Register</title>
+{% endblock %}
+<body>
+{% block content %}
+
+
+        <h2>Register</h2>
+        {% if form.error_messages %}
+            <p class="error"> {{ form.error_messages }}.</p>
+        {% endif %}
+
+        <form   action="/accounts/register/" method='POST'> {% csrf_token %}
+
+        <p>Username:<input type="text" name="username" value="" placeholder=" " ></p>
+        <p>Password:<input type="password" name="password1" value="" placeholder="" ></p>
+
+        <p>Password Confirmation:<input type="password" name="password2" value="" placeholder="" ></p>
+        <p>Email-Id:<input type="email" name="email" value=""></p>
+            <input type="submit" value="Register" class="btn btn-primary"/>
+        </form>
+
+{% endblock %}
+</body>

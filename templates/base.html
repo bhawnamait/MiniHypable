@@ -1,0 +1,87 @@
+<html lang="en">
+
+<head>
+    <title>{% block title %}My base template{% endblock %}</title>
+<style>
+ body{
+            text-align:start;
+            background-color: wheat;
+
+        }
+        #page{
+                width: 1000px;
+            text-align:start;
+            background-color: chartreuse;
+            text-decoration-color: coral;
+            text-decoration: blink;
+            margin: 10px auto 20px auto;
+        }
+        #topBoder{
+            width: inherit;
+            border: 15px solid lightcyan;
+
+        }
+        #sidebar{
+            float: start;
+            width:50px;
+
+            border: 1px solid #c00;
+            background-color: coral;
+
+        }
+        #content{
+            width: 880px;
+            float: left;
+            border: 1px solid #000;
+            padding: 10px;
+            background-color: transparent;;
+            text-after-overflow: nextline;
+        }
+    .helptext{
+        float: left;
+        width: 100%;
+
+    }
+    .clearfix{
+        clear: both;
+    }
+    .messages{
+        background-color: #008;
+        colour: #008003;
+        padding-left: 10px;
+    }
+    .deleted{
+        background-color: #880000;
+        border-color: blueviolet;
+        padding-left: 10px;
+    }
+        </style>
+  </head>
+<body>
+   <div id="topBoder">
+
+   </div>
+   <div  id="page" >
+
+    <div id="sidebar">
+        {% block sidebar %}
+     <ul>
+         <li ><a href="/articles/all">Articles</a></li>
+         <li>  <a href ="/admin/">Admin</a></li>
+
+     </ul>
+        {% endblock %}
+        <h1><a href="/accounts/profile" > {{request.user.username}}</a></h1>
+    </div>
+    <div id="content">
+
+
+       {% block content %}
+
+        {% endblock %}
+
+    </div>
+   </div>
+
+</body>
+</html>

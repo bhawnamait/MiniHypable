@@ -1,0 +1,46 @@
+[
+{
+    "model": "login.articles",
+    "pk": 1,
+    "fields": {
+        "title": "cdd",
+        "body": "dfsddffd",
+        "pub_date": "2047-12-12T00:00:00Z",
+        "like": 12,
+        "thumbnail": ""
+    }
+},
+{
+    "model": "login.articles",
+    "pk": 2,
+    "fields": {
+        "title": "qwewrrer",
+        "body": "fdggfgf",
+        "pub_date": "2047-12-12T00:00:00Z",
+        "like": 1,
+        "thumbnail": ""
+    }
+},
+{
+    "model": "login.articles",
+    "pk": 3,
+    "fields": {
+        "title": "My First Article",
+        "body": "An article (abbreviated ART) is a word (or prefix or suffix) that is used with a noun to indicate the type of reference being made by the noun. Articles specify grammatical definiteness of the noun, in some languages extending to volume or numerical scope.",
+        "pub_date": "2017-12-02T00:00:00Z",
+        "like": 2,
+        "thumbnail": ""
+    }
+},
+{
+    "model": "login.articles",
+    "pk": 4,
+    "fields": {
+        "title": "Suruchi",
+        "body": "fk;lj;lvjofjjv;d;lsvc;l",
+        "pub_date": "2047-12-12T00:00:00Z",
+        "like": 2,
+        "thumbnail": ""
+    }
+}
+]

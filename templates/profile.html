@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+
+   <h2>Profile</h2>
+    <form action='/accounts/profile/' method='POST'>{% csrf_token %}
+        <li>{{ form.as_ul }}</li>
+    <input type="submit" value="Update"/>
+    </form>
+
+{% endblock %}
